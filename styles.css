@@ -22,6 +22,20 @@ body {
   text-align: center;
 }
 
+
+.site-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.site-logo {
+  width: 260px;
+  max-width: 70vw;
+  height: auto;
+  display: block;
+}
+
 .image-row {
   display: flex;
   align-items: center;
@@ -61,7 +75,21 @@ body {
     padding-top: 64px;
   }
 
-  .image-row {
+  
+.site-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.site-logo {
+  width: 260px;
+  max-width: 70vw;
+  height: auto;
+  display: block;
+}
+
+.image-row {
     justify-content: flex-start;
   }
 
