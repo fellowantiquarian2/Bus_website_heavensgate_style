@@ -44,17 +44,12 @@ body {
   max-width: 82vw;
 }
 
-.map-label,
-.map-link {
-  color: #99ccff;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-}
-
 .map-link {
   color: #ffff66;
   text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 
 .map-link:visited {
@@ -99,28 +94,6 @@ body {
 
 .contact a:visited {
   color: #cc99ff;
-}
-
-.product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 4px;
-}
-
-.product-image {
-  width: 220px;
-  max-width: 72vw;
-  height: auto;
-  display: block;
-}
-
-.product-caption {
-  color: #99ccff;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-  letter-spacing: 0.02em;
 }
 
 @media (max-width: 760px) {
