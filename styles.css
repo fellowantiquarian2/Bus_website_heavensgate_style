@@ -40,47 +40,18 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  width: 340px;
-  max-width: 82vw;
+  width: 620px;
+  max-width: 90vw;
 }
 
-.map-link {
-  color: #ffff66;
-  text-decoration: underline;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-}
-
-.map-link:visited {
-  color: #cc99ff;
-}
 
 .map-frame {
   width: 100%;
-  height: 210px;
+  height: 390px;
   border: 2px solid #99ccff;
   background: #000;
 }
 
-.image-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  width: 100%;
-  overflow-x: auto;
-  padding: 12px 0;
-}
-
-.image-row img {
-  flex: 0 0 auto;
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  border: 2px solid #99ccff;
-  background: #000;
-}
 
 .contact {
   color: #99ccff;
@@ -102,21 +73,13 @@ body {
     padding-top: 64px;
   }
 
-  .image-row {
-    justify-content: flex-start;
-  }
-
-  .image-row img {
-    width: 145px;
-    height: 145px;
-  }
 
   .bus-map {
-    width: 300px;
-    max-width: 88vw;
+    width: 92vw;
+    max-width: 92vw;
   }
 
   .map-frame {
-    height: 190px;
+    height: 360px;
   }
 }

@@ -1,13 +1,13 @@
 # Bus Website
 
-A one-page static site with a centered Books logo, a daily zoomable map, an image feed, an inquiries email, and a product image.
+A one-page static site with a centered Books logo, a daily zoomable map, and an inquiries email.
 
 ## Daily location update
 
 Edit `map-location.js` and change this line:
 
 ```js
-window.BOOK_BUS_LOCATION = "East 7th St and Avenue B, New York, NY";
+window.BOOK_BUS_LOCATION = "323 6th Ave, New York, NY 10014";
 ```
 
 You can use an address, intersection, landmark, or exact coordinates:

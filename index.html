@@ -21,15 +21,6 @@
         referrerpolicy="no-referrer-when-downgrade"
         src="">
       </iframe>
-      <a id="bus-map-link" class="map-link" href="#" target="_blank" rel="noopener">open map</a>
-    </section>
-
-    <section class="image-row" aria-label="Image feed">
-      <img src="assets/feed-1.jpg" alt="Uploaded image 1">
-      <img src="assets/feed-2.png" alt="Uploaded image 2">
-      <img src="assets/feed-3.png" alt="Uploaded image 3">
-      <img src="assets/feed-4.png" alt="Uploaded image 4">
-      <img src="assets/feed-5.jpg" alt="Uploaded image 5">
     </section>
 
     <footer class="contact">
@@ -40,14 +31,11 @@
   <script src="map-location.js"></script>
   <script>
     const mapFrame = document.getElementById("bus-map-frame");
-    const mapLink = document.getElementById("bus-map-link");
     const locationText = window.BOOK_BUS_LOCATION || "New York, NY";
     const zoomLevel = window.BOOK_BUS_MAP_ZOOM || 15;
     const encodedLocation = encodeURIComponent(locationText);
 
     mapFrame.src = `https://maps.google.com/maps?q=${encodedLocation}&z=${zoomLevel}&output=embed`;
-    mapLink.href = `https://maps.google.com/maps?q=${encodedLocation}`;
-    mapLink.textContent = locationText;
   </script>
 </body>
 </html>
