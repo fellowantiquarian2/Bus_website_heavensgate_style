@@ -33,9 +33,10 @@
     const mapFrame = document.getElementById("bus-map-frame");
     const locationText = window.BOOK_BUS_LOCATION || "New York, NY";
     const zoomLevel = window.BOOK_BUS_MAP_ZOOM || 15;
+    const mapType = window.BOOK_BUS_MAP_TYPE || "k"; // k = satellite view
     const encodedLocation = encodeURIComponent(locationText);
 
-    mapFrame.src = `https://maps.google.com/maps?q=${encodedLocation}&z=${zoomLevel}&output=embed`;
+    mapFrame.src = `https://maps.google.com/maps?q=${encodedLocation}&z=${zoomLevel}&t=${mapType}&output=embed`;
   </script>
 </body>
 </html>
