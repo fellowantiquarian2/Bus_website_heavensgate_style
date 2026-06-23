@@ -13,14 +13,20 @@
     </header>
 
     <section class="bus-map" aria-label="Bus location map">
-      <iframe
-        id="bus-map-frame"
-        class="map-frame"
-        title="Book Bus location map"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="">
-      </iframe>
+      <div class="map-wrapper">
+        <iframe
+          id="bus-map-frame"
+          class="map-frame"
+          title="Book Bus location map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="">
+        </iframe>
+        <img
+          class="closed-overlay"
+          src="assets/closed-sign.png"
+          alt="Sorry We're Closed sign">
+      </div>
     </section>
 
     <footer class="contact">

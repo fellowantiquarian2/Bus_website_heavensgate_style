@@ -44,14 +44,29 @@ body {
   max-width: 90vw;
 }
 
+.map-wrapper {
+  position: relative;
+  width: 100%;
+}
 
 .map-frame {
   width: 100%;
   height: 390px;
   border: 2px solid #99ccff;
   background: #000;
+  display: block;
 }
 
+.closed-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 155px;
+  max-width: 38%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
 
 .contact {
   color: #99ccff;
@@ -73,7 +88,6 @@ body {
     padding-top: 64px;
   }
 
-
   .bus-map {
     width: 92vw;
     max-width: 92vw;
@@ -81,5 +95,12 @@ body {
 
   .map-frame {
     height: 360px;
+  }
+
+  .closed-overlay {
+    top: 10px;
+    right: 10px;
+    width: 120px;
+    max-width: 42%;
   }
 }
