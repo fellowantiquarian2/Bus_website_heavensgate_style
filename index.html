@@ -38,5 +38,11 @@
 
     mapFrame.src = `https://maps.google.com/maps?q=${encodedLocation}&z=${zoomLevel}&t=${mapType}&output=embed`;
   </script>
+
+  <!-- Vercel Web Analytics: records page views and visitor geography after deployment on Vercel. -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
