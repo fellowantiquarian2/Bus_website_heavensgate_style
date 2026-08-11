@@ -38,12 +38,18 @@
   <script src="map-location.js"></script>
   <script>
     const mapFrame = document.getElementById("bus-map-frame");
+    const closedOverlay = document.getElementById("closed-overlay");
     const locationText = window.BOOK_BUS_LOCATION || "New York, NY";
     const zoomLevel = window.BOOK_BUS_MAP_ZOOM || 15;
     const mapType = window.BOOK_BUS_MAP_TYPE || "k"; // k = satellite view
+    const isOpen = window.BOOK_BUS_IS_OPEN === true;
     const encodedLocation = encodeURIComponent(locationText);
 
     mapFrame.src = `https://maps.google.com/maps?q=${encodedLocation}&z=${zoomLevel}&t=${mapType}&output=embed`;
+
+    if (closedOverlay) {
+  closedOverlay.style.display = isOpen ? "none" : "block";
+  }
   </script>
 
   <!-- Vercel Web Analytics: records page views and visitor geography after deployment on Vercel. -->
